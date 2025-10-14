@@ -1,2 +1,2 @@
 
-alert("voce esta sendo hackeado, cuidado onde incere seus dados!")
+alert("voce esta sendo hackeado, cuidado onde insere seus dados!")
