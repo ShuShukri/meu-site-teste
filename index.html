@@ -5,18 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curso JS</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       background-image: url('https://metaprime.com.br/wp-content/uploads/2024/06/logo-metaprime-grande.png');
-      background-size: auto;            /* cobre toda a tela */
-      background-position: center top;/* centraliza a imagem */
+      background-size: auto;
+      background-position: center top;
       background-repeat: no-repeat;
-      height: 100vh;                     /* ocupa 100% da altura da tela */
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -24,33 +20,48 @@
       text-align: center;
       font-family: Arial, sans-serif;
       color: rgb(23, 41, 38);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* melhor leitura */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
+    h1 { font-size: 3em; margin-bottom: 20px; }
+    h2 { font-size: 1.5em; max-width: 700px; }
+    p { color: rgb(23, 41, 38); }
 
-    h2 {
-      font-size: 1.5em;
-      max-width: 700px;  
+    /* CSS da caixa interativa */
+    .info-box {
+      background: rgba(255,255,255,0.95);
+      padding: 12px 18px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      margin-top: 20px;
+      max-width: 400px;
+      text-align: left;
+      position: relative;
     }
-
-    p {
-      color: rgb(23, 41, 38)
+    .info-box h3 { margin-bottom: 8px; font-size: 1.2em; }
+    .info-box p { margin-bottom: 6px; }
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <h1>        Eorbis        </h1>
+  <h1>Eorbis</h1>
   
-  <h2> Domínio:______________</h2>
+  <h2>Domínio:______________</h2>
   <h2>Login:________________</h2>
-  <h2> Senha:________________</h2>
-  <br><p> e-Orbis-Versão: 3.21.2 </p>
+  <h2>Senha:________________</h2>
+  <br><p>e-Orbis-Versão: 3.21.2</p>
+
+  <!-- Container para a caixa interativa -->
+  <div id="infoContainer"></div>
 
   <script src="gpt.js"></script>
-
 </body>
 </html>
